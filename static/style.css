@@ -1,0 +1,1146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+ 
+/* Page */
+html,
+body{
+    height:100%;
+    margin:0;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    font-family:Arial, sans-serif;
+    background:rgb(139, 71, 60);
+}
+.main-content{
+    flex:1;
+}
+/* ===================================
+      MAIN CARD (CONTAINER)
+=================================== */
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:20px auto;
+    background:rgb(190, 162, 162);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+.about_container{
+    width:95%;
+    max-width:1400px;
+    margin:20px auto;
+    background:rgb(255, 255, 255);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+.history_container{
+    width:95%;
+    max-width:1400px;
+    margin:20px auto;
+    padding:20px;
+    background:whitesmoke;
+    border-radius:15px;
+    box-sizing:border-box;
+   
+      /* or simply remove this line */
+}
+.home-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:calc(100vh - 50px);
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("images/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    
+}
+
+.home-card{
+    margin: 10px;
+    width:520px;
+
+    background:rgba(255,255,255,0.92);
+
+    backdrop-filter:blur(8px);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+
+}
+
+.home-card h1{
+
+    font-size:60px;
+
+    margin-bottom:10px;
+
+}
+
+.home-card h2{
+
+    color:#c1121f;
+
+    margin-bottom:15px;
+
+}
+
+.home-card p{
+
+    color:#555;
+
+    margin-bottom:25px;
+
+}
+
+.home-btn{
+
+    display:block;
+
+    width:100%;
+
+    padding:15px;
+
+    margin:12px 0;
+
+    background:#d62828;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.home-btn:hover{
+
+    background:#b71c1c;
+    transform:scale(1.03);
+    transform:translateY(-4px);
+    transition:.3s;
+    box-shadow:0 8px 18px rgba(214,40,40,.4);
+
+}
+
+.home-card hr{
+
+    margin:20px 0;
+
+}
+
+/* ===================================
+     FOOTER POSITION
+=================================== */
+
+
+.footer{
+    width:100%;
+    background:#c1121f;
+    color:white;
+    text-align:center;
+    padding:18px 15px;
+    font-size:17px;
+    font-weight:550;
+    box-sizing:border-box;
+}
+
+.footer p{
+    margin:0;
+}
+
+
+/* Heading */
+h1{
+    text-align:center;
+    color:#c1121f;
+    margin-bottom:10px;
+}
+
+p{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+/* ===================================
+     4 COLUMNS
+=================================== */
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    @media(max-width:768px){
+
+.center-field{
+    grid-column:auto;
+}
+
+}
+
+}
+.helper-text{
+    display:block;
+    margin-top:6px;
+    font-size:13px;
+    color:#666;
+    font-style:italic;
+}
+
+/* Each Input Box */
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+/* Labels */
+label{
+    font-weight:bold;
+    margin-bottom:8px;
+    color:#333;
+}
+
+/* Inputs */
+input,
+select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+/* Focus Effect */
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#0077ff;
+    box-shadow:0 0 5px rgba(0,119,255,.3);
+}
+
+/* Small Text */
+small{
+    margin-top:5px;
+    color:gray;
+    font-size:12px;
+}
+
+/* ===================================
+     BUTTON SECTION
+=================================== */
+button{
+    grid-column:1 / -1;
+    margin-top:20px;
+    padding:15px;
+    background:#d62828;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+.center-field{
+    grid-column:2 / 4;
+}
+
+button:hover{
+    background:#b71c1c;
+    
+}
+
+/* Bottom Buttons */
+
+.bottom-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.home-btn-page{
+
+    background:#0077ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+    cursor: pointer;
+
+}
+
+.home-btn-page:hover{
+
+    background:#005fcc;
+
+    transform:translateY(-3px);
+
+}
+
+.clear-btn{
+
+    background:#6c757d;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.clear-btn:hover{
+
+    background:#545b62;
+
+    transform:translateY(-3px);
+
+}
+
+/* Result Page Bottom Buttons */
+/* Result Page Bottom Buttons */
+/* Result Page Bottom Buttons */
+
+.result-buttons{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:30px;
+    width:100%;
+}
+
+.home-btn-result,
+.predict-btn-result{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.home-btn-result{
+
+    background:#0d6efd;
+}
+
+.home-btn-result:hover{
+
+    background:#0b5ed7;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 18px rgba(13,110,253,.35);
+
+}
+
+.predict-btn-result{
+
+    background:#d62828;
+
+}
+
+.predict-btn-result:hover{
+
+    background:#b71c1c;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 18px rgba(214,40,40,.35);
+
+}
+
+/* ===================================
+     Result SECTION
+=================================== */
+
+.result{
+    width:75%;
+    max-width:900px;
+    margin:40px auto;
+    padding:40px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+.result h1{
+    margin-bottom:25px;
+}
+
+.result h2{
+    font-size:35px;
+    margin:20px 0;
+}
+
+.result ul{
+    list-style:none;
+    padding:0;
+    margin:25px 0;
+}
+
+.result li{
+    margin:8px 0;
+    font-size:18px;
+}
+
+/* Confidence Text */
+
+.confidence-text{
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    margin:20px 0;
+
+}
+
+.confidence-text.safe{
+
+    color:#28a745;
+
+}
+
+.confidence-text.danger{
+
+    color:#dc3545;
+
+}
+
+.safe{
+    background:#d4edda;
+    color:#155724;
+    
+}
+
+.danger{
+    background:#f8d7da;
+    color:#721c24;
+    
+}
+
+
+
+.result a{
+    display:inline-block;
+    margin-top:20px;
+    margin-bottom:20px;   /* Add this */
+    padding:12px 25px;
+    background:#d62828;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.patient-card{
+
+    background:rgb(235, 163, 163);
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.patient-card h2{
+
+    text-align:center;
+
+    color:#c1121f;
+
+    margin-bottom:20px;
+
+}
+
+.patient-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+    background-color: rgb(253, 252, 252);
+    
+}
+
+.patient-table td{
+
+    padding:14px;
+
+
+    border-bottom:1px solid #eee;
+    
+
+}
+
+.patient-table td:first-child{
+    
+
+    font-weight:bold;
+
+    width:45%;
+
+    background:rgb(239, 231, 231);
+
+}
+
+.patient-table tr:hover{
+
+    background:#fff5f5;
+
+}
+
+
+.disclaimer{
+    margin-top:30px;
+    padding:15px;
+    color:#555;
+    font-size:18px;
+}
+
+.progress{
+    width:80%;
+    height:30px;
+    background:#ddd;
+    margin:20px auto;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    height:100%;
+    border-radius:20px;
+    transition:width 1s ease-in-out;
+}
+.progress-fill.safe{
+    background:linear-gradient(to right,#34c759,#28a745);
+}
+
+.progress-fill.danger{
+    background:linear-gradient(to right,#ff6b6b,#dc3545);
+}
+
+.gauge-card{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:30px 0;
+
+}
+
+.gauge{
+
+    position:relative;
+
+    width:250px;
+
+    height:250px;
+
+}
+
+.gauge svg{
+
+    transform:rotate(-90deg);
+
+}
+
+.gauge circle{
+
+    fill:none;
+
+    stroke-width:18;
+
+}
+
+/* Background circle */
+.bg{
+    fill:none;
+    stroke-width:18;
+}
+
+/* Low Risk (progress green, background red) */
+.bg.safe{
+    stroke:#c84c59;   /* Light Red */
+}
+
+/* High Risk (progress red, background green) */
+.bg.danger{
+    stroke:#17d744;   /* Light Green */
+}
+
+/* Progress circle */
+.progress{
+    fill:none;
+    stroke-width:18;
+    stroke-linecap:round;
+    stroke-dasharray:597;
+    stroke-dashoffset:calc(597 - (597 * var(--percent))/100);
+    transition:stroke-dashoffset 1.5s ease;
+}
+
+.progress.safe{
+    stroke:#28a745;   /* Green */
+}
+
+.progress.danger{
+    stroke:#dc3545;   /* Red */
+}
+
+.gauge-text{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    text-align:center;
+
+}
+
+.gauge-text h1.safe{
+    color:#28a745;
+}
+
+.gauge-text h1.danger{
+    color:#dc3545;
+}
+
+.gauge-text h3.safe{
+    color:#28a745;
+}
+
+.gauge-text h3.danger{
+    color:#dc3545;
+}
+
+@keyframes fillGauge{
+
+    from{
+
+        stroke-dashoffset:597;
+
+    }
+
+    to{
+
+        stroke-dashoffset:calc(597 - (597 * var(--percent) / 100));
+
+    }
+
+}
+
+/* ===================================
+     About page
+=================================== */
+/* ===================================
+     About Page
+=================================== */
+
+.about_container{
+    width:80%;
+    margin:40px auto;
+    background:#fff;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.about_container h1{
+    text-align:center;
+    color:#c1121f;
+    margin-bottom:20px;
+}
+
+.about_container h2{
+    color:#c1121f;
+    text-align:left;
+    margin:25px 0 15px;
+}
+/* Center only these headings */
+.about_container h2.center-heading{
+    text-align:center;
+}
+
+.about_container p{
+    font-size:18px;
+    line-height:1.8;
+    text-align:left;
+}
+
+.about-list{
+    margin-left:30px;
+    font-size:18px;
+    line-height:2;
+}
+
+.about-list.tech-list{
+    columns:2;
+    column-gap:60px;
+}
+
+.about_container hr{
+    margin:30px 0;
+}
+
+/* Home Button */
+
+.about-buttons{
+    margin-top:30px;
+    text-align:right;
+}
+
+.about-btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#0077ff;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.about-btn:hover{
+    background:#005fcc;
+}
+
+
+/* ===================================
+      History Page
+=================================== */
+
+.table-responsive{
+    width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+}
+
+.history-table{
+    width:100%;
+    min-width:900px;
+    border-collapse:collapse;
+}
+
+
+   
+
+.history-table th{
+    background:#c1121f;
+    color:white;
+    padding:12px;
+}
+
+.history-table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+.history-table tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+.history-table tr:hover{
+    background:#eef5ff;
+}
+.history-buttons{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:25px;
+    width:100%;
+}
+
+.delete-btn{
+    background:#dc3545;
+    color:white;
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.delete-btn:hover{
+    background:#b71c1c;
+}
+
+
+footer p{
+    margin: 0;
+    color: white;
+    
+}
+
+/* ===================================
+      HEART LOADING SCREEN
+=================================== */
+
+#loading-screen{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.97);
+
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+}
+.heart-img{
+    width:180px;
+    height:auto;
+
+    transform-origin:center center;
+
+    animation:heartbeat 1s infinite ease-in-out;
+
+    filter:drop-shadow(0 10px 18px rgba(255,0,0,.35));
+}
+
+@keyframes heartbeat{
+
+    0%{
+        transform:scale(1);
+    }
+
+    15%{
+        transform:scale(1.12);
+    }
+
+    30%{
+        transform:scale(0.98);
+    }
+
+    45%{
+        transform:scale(1.18);
+    }
+
+    60%{
+        transform:scale(1);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* Beating Heart */
+
+.heart{
+    font-size:90px;
+    animation:heartbeat 1s infinite;
+}
+
+@keyframes heartbeat{
+
+    0%{
+        transform:scale(1);
+    }
+
+    25%{
+        transform:scale(1.25);
+    }
+
+    50%{
+        transform:scale(1);
+    }
+
+    75%{
+        transform:scale(1.25);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* ECG Line */
+
+.ecg{
+    width:320px;
+    height:6px;
+
+    overflow:hidden;
+
+    margin:35px 0;
+
+    background:#ddd;
+
+    border-radius:20px;
+
+    position:relative;
+}
+
+.line{
+
+    position:absolute;
+
+    width:120px;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        red,
+        transparent
+    );
+
+    animation:ecgmove 1.5s linear infinite;
+
+}
+
+@keyframes ecgmove{
+
+    from{
+        left:-120px;
+    }
+
+    to{
+        left:320px;
+    }
+
+}
+
+#loading-screen h2{
+
+    color:#c1121f;
+
+    margin-bottom:15px;
+
+}
+
+#loading-screen p{
+
+    font-size:22px;
+
+    color:#555;
+
+    font-weight:bold;
+
+}
+
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+
+/* Laptop */
+@media screen and (max-width:1200px){
+
+    .container,
+    .result,
+    .about_container,
+    .history_container{
+        width:95%;
+    }
+
+    .form-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .center-field{
+        grid-column:auto;
+    }
+
+}
+
+
+/* Tablet */
+@media screen and (max-width:768px){
+
+    .container,
+    .result,
+    .about_container,
+    .history_container{
+        width:96%;
+        padding:20px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .center-field{
+        grid-column:auto;
+    }
+
+    input,
+    select,
+    button{
+        width:100%;
+    }
+
+    .dashboard{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .result-buttons{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .home-btn-result,
+    .predict-btn-result{
+        width:100%;
+        text-align:center;
+    }
+
+    .patient-table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    .footer{
+        position:relative;
+    }
+
+}
+
+
+/* ==========================
+   MOBILE (576px and below)
+========================== */
+@media screen and (max-width:768px){
+
+    /* Containers */
+    .container,
+    .result,
+    .about_container,
+    .history_container{
+        width:96%;
+        padding:15px;
+        box-sizing:border-box;
+    }
+
+    /* Form */
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    input,
+    select,
+    button{
+        width:100%;
+    }
+
+    /* Bottom buttons */
+    .bottom-buttons{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .clear-btn{
+        order:1;
+        width:100%;
+    }
+
+    .home-btn-page{
+        order:2;
+        width:100%;
+        text-align:center;
+    }
+
+    /* History table */
+    .history_container{
+        width:96%;
+        padding:10px;
+        box-sizing:border-box;
+    }
+    .table-responsive{
+        width: 100%;
+        overflow-x:auto;
+         overflow-y:hidden;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .history-table{
+        width:900px;
+        width:100%;
+        border-collapse:collapse;
+    }
+
+    /* Footer */
+    .footer{
+         padding-bottom:70px;
+    }
+
+    .footer p{
+        font-size:16px;
+        line-height:1.5;
+        margin:0;
+    }
+}
