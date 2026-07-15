@@ -34,10 +34,16 @@ SQLite
 📂 Project Structure
 Heart-Disease-Prediction-System/
 │
+├── datase/
+│
+├──model/
+│   └── heart_model.pkl
+│
 ├── static/
 │   ├── css/
 │   └── images/
 │   
+├── screenshots
 │
 ├── templates/
 │   ├── index.html
@@ -47,14 +53,13 @@ Heart-Disease-Prediction-System/
 │   ├── result.html
 │   └── history.html
 │
-├── model/
-│   └── heart_model.pkl
 │
 ├── heart.db
-├── screenshots
+├── Heart_Disease_Report.pdf
 ├── app.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── train_model.py
 
 
 ⚙️ Installation :
