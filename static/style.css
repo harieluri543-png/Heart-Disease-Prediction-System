@@ -901,6 +901,12 @@ footer p{
     font-size:90px;
     animation:heartbeat 1s infinite;
 }
+.heart-image{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 15px;
+}
 
 @keyframes heartbeat{
 
