@@ -18,6 +18,38 @@ from flask import redirect
 # Create the application
 app = Flask(__name__)
 
+# Create database and history table if they don't exist
+conn = sqlite3.connect("heart.db")
+cursor = conn.cursor()
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS history(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    age INTEGER,
+    gender TEXT,
+    prediction TEXT,
+    confidence REAL,
+    date TEXT,
+    time TEXT
+)
+""")
+
+conn.commit()
+conn.close()
+print("table created")
+
+import os
+
+print("Current directory:", os.getcwd())
+print("Database path:", os.path.abspath("heart.db"))
+
+conn = sqlite3.connect("heart.db")
+cursor = conn.cursor()
+cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+print("Tables:", cursor.fetchall())
+conn.close()
+
+
 model = joblib.load("model/heart_model.pkl")
 
 #Create a home route
